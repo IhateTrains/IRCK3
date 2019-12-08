@@ -1,0 +1,8 @@
+﻿christianity = { # Christian
+	color = hsv { 0.16 1.0 1.0 }
+	global_pop_assimilation_speed_modifier = 0.2 #placeholder, copied from Judaism
+}
+islam = { # Muslim
+	color = hsv { 0.31 0.5 0.5 }
+	global_tribesmen_happyness = 0.1 #placeholder, copied from Arabic pagan
+}
