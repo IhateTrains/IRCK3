@@ -1,0 +1,7 @@
+﻿yearly_country_pulse =
+{
+	on_actions = {
+		delay = { days = { 1 364 } }
+		l6_custom_on_action_christianity
+	}
+}

@@ -1,0 +1,268 @@
+﻿namespace = l6_christian
+
+#Conversion of the 3000
+l6_christian.1 = {
+	type = country_event
+	title= "l6_christian.1.t"
+	desc = "l6_christian.1.desc"
+	picture = crucifixion
+	
+	#left_portrait = current_ruler
+	
+	fire_only_once = yes
+	
+	#
+	
+	trigger = {
+		current_date > 784.5.20 #30AD (should it be 33AD?) just over 40 days after passover
+		p:687 = {
+			owner = root
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "l6_christian.1.a"
+		p:687 = {
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+		}
+		set_global_variable = {
+			name = christianity_spreads_locally
+		}
+	}
+}
+	
+#Conversion of Paul
+l6_christian.2 = {
+	type = country_event
+	title= "l6_christian.2.t"
+	desc = "l6_christian.2.desc"
+	picture = crucifixion
+	
+	#left_portrait = current_ruler
+	
+	fire_only_once = yes
+	
+	#
+	
+	trigger = {
+		current_date > 787.5.20 #33AD (should it be 36AD?)
+		has_global_variable = christianity_spreads_locally
+		p:750 = {
+			owner = root
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "l6_christian.2.a"
+		p:750 = {
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+		}
+		set_global_variable = {
+			name = christianity_expands
+		}
+	}
+}
+
+##########
+#Christianity Spreads Locally - regions near the Holy Land
+l6_christian.3 = {
+	type = country_event
+	title= "l6_christian.3.t"
+	desc = "l6_christian.3.desc"
+	picture = crucifixion
+	
+	#left_portrait = current_ruler
+	
+	#
+	
+	trigger = {
+		has_global_variable = christianity_spreads_locally
+		any_owned_province = {
+			OR = {
+				region = palestine_region
+				region = syria_region
+				region = lower_egypt_region
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "l6_christian.3.a"
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = palestine_region
+					region = syria_region
+					region = lower_egypt_region
+				}
+				any_pops_in_province = {
+					NOT = { pop_religion = christianity }
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					NOT = {
+						pop_religion = christianity
+					}
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 4
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+		}
+	}
+}
+
+#Jews Convert To Christianity - any region
+l6_christian.4 = {
+	type = country_event
+	title= "l6_christian.4.t"
+	desc = "l6_christian.4.desc"
+	picture = crucifixion
+	
+	#left_portrait = current_ruler
+	
+	#
+	
+	trigger = {
+		has_global_variable = christianity_spreads_locally
+		any_owned_province = {
+			any_pops_in_province = {
+				pop_religion = judaism
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "l6_christian.4.a"
+		random_owned_province = {
+			limit = {
+				any_pops_in_province = {
+					pop_religion = judaism
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					pop_religion = judaism
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 4
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+		}
+	}
+}
+
+#Gentiles Convert - provinces next to/with Christians
+l6_christian.5 = {
+	type = country_event
+	title= "l6_christian.5.t"
+	desc = "l6_christian.5.desc"
+	picture = crucifixion
+	
+	#left_portrait = current_ruler
+	
+	#
+	
+	trigger = {
+		current_date > 450.1.1
+		has_global_variable = christianity_expands
+		any_owned_province = {
+			OR = {
+				any_neigbour_province = {
+					any_pops_in_province = {
+						pop_religion = christianity
+					}
+				}
+				any_pops_in_province = {
+					pop_religion = christianity
+				}
+			}
+			any_pops_in_province = {
+				count > 4
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "l6_christian.5.a"
+		random_owned_province = {
+			limit = {
+				OR = {
+					any_neigbour_province = {
+						any_pops_in_province = {
+							pop_religion = christianity
+						}
+					}
+					any_pops_in_province = {
+						pop_religion = christianity
+					}
+				}
+				any_pops_in_province = {
+					count > 4
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					NOT = { pop_religion = christianity }
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 4
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+		}
+	}
+}
+
+#Gentiles Convert - nations that control part of the Holy Land
+
+
+#Character Converts - nations with Christians
+##Include option to force character to deconvert
+
+#Character accepts
+#Character refuses
+
+#Ruler convertion option
+##Only if ruler is in civil war or pops are X% converted
+
+#Change to Christianity
+
+##########
+#Thomas
+
+#Paul
+

@@ -1,0 +1,17 @@
+﻿
+l6_custom_on_action_christianity = {
+	trigger = {
+		num_of_cities >= 1
+		has_global_flag = christianity_spreads_locally
+	}
+	events = {
+		l6_christian.1
+		l6_christian.2
+	}
+	random_events = {
+		30 = 0
+		20 = l6_christian.3
+		20 = l6_christian.4
+		20 = l6_christian.5
+	}
+}

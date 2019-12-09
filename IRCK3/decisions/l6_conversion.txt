@@ -1,0 +1,82 @@
+﻿country_decisions = {
+	
+	l6_convert_to_christian = {
+		
+		potential = {
+			num_of_cities >= 1
+			NOT = { religion = christianity }
+			has_global_variable = christianity_spreads_locally
+			NOT = {
+				has_country_modifier = recent_convert_modifier
+			}
+		}
+
+		allow = {
+			religious_power >= 400
+			trigger_if = { #monarchy
+				limit = { is_monarchy = yes }
+				legitimacy >= 70
+			}
+			trigger_else_if = { #Republic
+				limit = { is_republic = yes }
+				current_ruler.character_party.party_support >= 50
+			}
+			trigger_else = { #Tribe
+				any_character = {
+					count = all
+					is_clan_chief = yes
+					loyalty >= 60
+				}
+			}
+		}
+		
+		ai_allow = {
+			
+		}
+		
+		effect = {
+			set_country_religion = christianity
+			add_religious_power = -400
+			add_country_modifier = {
+				name = "recent_convert_modifier"
+				duration = 3650
+			}
+			current_ruler = {
+				if = {
+					limit = {
+						NOT = { has_religion = christianity }
+					}
+					set_character_religion = christianity
+				}
+			}
+			ordered_character = {
+				limit = {
+					loyalty >= 60
+					NOT = { has_religion = christianity }
+					is_ruler = no
+				}
+				max = 10
+				order_by = prominence
+				set_character_religion = christianity
+			}
+			custom_tooltip = religion_conversion_tooltip
+			hidden_effect = {
+				every_character = {
+					add_loyalty = -20
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				capital_scope = {
+					dominant_province_religion = christianity
+				}
+			}
+		}
+	}
+	
+} 
+
