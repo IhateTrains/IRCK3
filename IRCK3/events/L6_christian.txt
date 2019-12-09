@@ -97,9 +97,9 @@ l6_christian.3 = {
 		has_global_variable = christianity_spreads_locally
 		any_owned_province = {
 			OR = {
-				region = palestine_region
-				region = syria_region
-				region = lower_egypt_region
+				is_in_region = palestine_region
+				is_in_region = syria_region
+				is_in_region = lower_egypt_region
 			}
 		}
 	}
@@ -110,9 +110,9 @@ l6_christian.3 = {
 		random_owned_province = {
 			limit = {
 				OR = {
-					region = palestine_region
-					region = syria_region
-					region = lower_egypt_region
+					is_in_region = palestine_region
+					is_in_region = syria_region
+					is_in_region = lower_egypt_region
 				}
 				any_pops_in_province = {
 					NOT = { pop_religion = christianity }
@@ -197,7 +197,7 @@ l6_christian.5 = {
 		has_global_variable = christianity_expands
 		any_owned_province = {
 			OR = {
-				any_neigbour_province = {
+				any_neighbor_province = {
 					any_pops_in_province = {
 						pop_religion = christianity
 					}
@@ -218,7 +218,7 @@ l6_christian.5 = {
 		random_owned_province = {
 			limit = {
 				OR = {
-					any_neigbour_province = {
+					any_neighbor_province = {
 						any_pops_in_province = {
 							pop_religion = christianity
 						}
