@@ -257,7 +257,7 @@ l6_christian.5 = {
 #Character refuses
 
 #Ruler convertion option
-##Only if ruler is in civil war or pops are X% converted
+##Only if ruler is in civil war (like Constantine) or pops are X% converted
 
 #Change to Christianity
 
