@@ -1,0 +1,4 @@
+﻿# LevelS 20 and prior: vanilla
+
+# Level 21
+postal_service_inv = {				diplomatic_range_modifier = 0.1  				oratory_tech = 21 }
