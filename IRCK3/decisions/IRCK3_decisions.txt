@@ -1,0 +1,39 @@
+﻿country_decisions = {
+	divide_roman_empire = { # Divide the Roman Empire - East-West 'Theodosius' division
+		potential = {
+			num_of_cities >= 2
+			#government = imperium #DISABLED FOR TESTING
+			tag = ROM
+		}
+		allow = {
+			#num_of_cities >= 600 #DISABLED FOR TESTING
+			num_of_cities >= 2
+		}
+		effect = {
+			change_country_tag = WRE
+			change_country_flag = WRE
+			change_country_name = "Western Roman Empire"
+			change_country_adjective = "Western Roman"
+			p:1453 = {
+				create_country = {
+					name = {
+						name = "Eastern Roman Empire"
+						adjective = "Eastern Roman"
+					}
+					#save_scope_as = pompeii_scope
+					change_country_tag = ERE
+					change_country_flag = ERE
+					change_country_color = ck2_purple
+					set_primary_culture = roman
+					set_country_religion = roman_pantheon
+					change_government = imperium
+					add_treasury = 50.0
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

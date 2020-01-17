@@ -604,3 +604,5 @@ SIN = "countries/italia/selinous.txt"
 
 #IRCK3 mod
 RSD = "countries/arabia/rashidun.txt"
+ERE = "countries/rome/eastern_roman_empire.txt"
+WRE = "countries/rome/western_roman_empire.txt"
