@@ -20,7 +20,7 @@
 						name = "Eastern Roman Empire"
 						adjective = "Eastern Roman"
 					}
-					#save_scope_as = pompeii_scope
+					save_scope_as = ere_scope
 					change_country_tag = ERE
 					change_country_flag = ERE
 					change_country_color = ck2_purple
@@ -29,6 +29,10 @@
 					change_government = imperium
 					add_treasury = 50.0
 				}
+			}
+			every_owned_province = {
+				limit = { is_in_pars_occidentalis_trigger = no }
+				set_owned_by = scope:ere_scope
 			}
 		}
 		

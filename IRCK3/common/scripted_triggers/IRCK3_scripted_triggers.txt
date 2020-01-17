@@ -1,0 +1,16 @@
+﻿is_in_pars_occidentalis_trigger = {
+	OR = {
+		is_in_britain_trigger = yes
+		is_in_gaul_trigger = yes
+		is_in_belgium_trigger = yes
+		is_in_germany_trigger = yes
+		is_in_rhaetia_trigger = yes
+		is_in_italy_trigger = yes
+		is_in_illyria_trigger = yes
+		is_in_hispania_trigger = yes
+		is_in_mauretania_trigger = yes
+		is_in_numidia_trigger = yes
+		is_in_venedia_trigger = yes
+		is_in_region = africa_region
+	}
+}
