@@ -1,0 +1,3 @@
+- Made republics' elections annual
+- Added a decision to divide the Roman Empire into two halves
+- Added one late-game invention

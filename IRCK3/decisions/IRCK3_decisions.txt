@@ -2,37 +2,64 @@
 	divide_roman_empire = { # Divide the Roman Empire - East-West 'Theodosius' division
 		potential = {
 			num_of_cities >= 2
-			#government = imperium #DISABLED FOR TESTING
+			government = imperium
 			tag = ROM
+			any_owned_province = {
+				is_in_pars_occidentalis_trigger = yes
+			}
 		}
 		allow = {
-			#num_of_cities >= 600 #DISABLED FOR TESTING
-			num_of_cities >= 2
+			num_of_cities >= 600
+			owns = 1 # Rome
+			owns = 1453 # Byzantion/Constantinople
 		}
 		effect = {
-			change_country_tag = WRE
-			change_country_flag = WRE
-			change_country_name = "Western Roman Empire"
-			change_country_adjective = "Western Roman"
-			p:1453 = {
-				create_country = {
-					name = {
-						name = "Eastern Roman Empire"
-						adjective = "Eastern Roman"
-					}
-					save_scope_as = ere_scope
-					change_country_tag = ERE
-					change_country_flag = ERE
-					change_country_color = ck2_purple
-					set_primary_culture = roman
-					set_country_religion = roman_pantheon
-					change_government = imperium
-					add_treasury = 50.0
+			if = {
+				limit = {
+					capital_scope = { is_in_pars_occidentalis_trigger = yes}
 				}
+				every_owned_province = {
+					limit = { is_in_pars_occidentalis_trigger = no }
+					set_owned_by = c:ERE
+				}
+				c:ERE = {
+					set_capital = 1453 # Constantinople
+					change_country_name = "Eastern Roman Empire"
+					change_country_adjective = "Eastern Roman"
+					set_primary_culture = root.culture
+					set_country_religion = root.religion
+					change_government = imperium
+					set_as_ruler = root.current_heir
+				}
+				
+				change_country_tag = WRE
+				change_country_flag = WRE
+				change_country_name = "Western Roman Empire"
+				change_country_adjective = "Western Roman"
+				change_government = imperium
+				save_scope_as = senior_pars
 			}
-			every_owned_province = {
-				limit = { is_in_pars_occidentalis_trigger = no }
-				set_owned_by = scope:ere_scope
+			else = {
+				every_owned_province = {
+					limit = { is_in_pars_occidentalis_trigger = yes }
+					set_owned_by = c:WRE
+				}
+				c:WRE = {
+					set_capital = 1 # Rome
+					change_country_name = "Western Roman Empire"
+					change_country_adjective = "Western Roman"
+					set_primary_culture = root.culture
+					set_country_religion = root.religion
+					change_government = imperium
+					set_as_ruler = root.current_heir
+				}
+				
+				change_country_tag = ERE
+				change_country_flag = ERE
+				change_country_name = "Eastern Roman Empire"
+				change_country_adjective = "Eastern Roman"
+				change_government = imperium
+				save_scope_as = senior_pars
 			}
 		}
 		
