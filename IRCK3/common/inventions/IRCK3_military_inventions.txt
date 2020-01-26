@@ -1,0 +1,6 @@
+﻿# Levels 20 and prior: vanilla
+
+# Level 47
+onager_inv = {				siege_ability = 0.05  				military_tech = 47 }
+# Level 63
+mangonel_inv = {				siege_ability = 0.05  				military_tech = 63 }
