@@ -700,6 +700,10 @@ yearly_disaster_pulse = {
 		natural_disaster_events.1 # Etna's 122 BC eruption
 		delay = { days = { 302 } # delay to make Vesuvius erupt c. October 30
 		IRCK3_volcano.1 # Vesuvius' 79 AD eruption
+		delay = { days = { 1 364 } }
+		IRCK3_volcano.2 # Vesuvius' minor eruptions
+		#delay = { days = { 1 364 } }
+		#IRCK3_volcano.3 # Etna' minor eruptions #TODO
 	}
 	random_events = {
 		1502 = 0
