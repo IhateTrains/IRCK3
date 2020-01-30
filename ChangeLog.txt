@@ -1,3 +1,4 @@
 - Made republics' elections annual
 - Added a decision to divide the Roman Empire into two halves
-- Added one late-game invention
+- Added three late-game inventions
+- Replaced vanilla random volcanic eruption events with historical eruptions of Etna in 122 BC and Vesuvius in 79 AD
