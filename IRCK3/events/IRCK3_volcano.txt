@@ -5,8 +5,8 @@
 		# based on http://volcanolive.com/vesuvius.html and Wikipedia
 	# Etna: 141 BC, 135 BC, 126 BC, 122 BC (major), 61 BC, 56 BC, 49 BC, 44 BC, 36 BC, 32 BC, 10 BC, 10 AD, 39 AD, 80 AD, 252 AD, 417 AD, 644 AD, 812 AD, 814 AD, 859 AD
 		# based on http://volcanolive.com/etna2.html
-	# Ararat: none
-	# Methana: none?
+	# Ararat: 300 AD, based on http://volcanolive.com/ararat.html
+	# Methana: 230 BC, based on http://volcanolive.com/methana.html
 	# Aragats: none?
 	# Argaeus Mons: none?
 	# Argaios Mons: same as Argaeus? that would mean none
@@ -139,7 +139,6 @@ IRCK3_volcano.3 = {
 				current_date >= 613.1.1 # 141 BC
 				current_date < 614.1.1
 			}
-			
 			AND = {
 				current_date >= 619.1.1 # 135 BC
 				current_date < 620.1.1
@@ -211,6 +210,54 @@ IRCK3_volcano.3 = {
 			AND = {
 				current_date >= 1612.1.1 # 859 AD
 				current_date < 1613.1.1
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_vfx = {
+				name = "volcano_eruption"
+				duration = 0
+			}
+		}
+	}
+}
+# Ararat's minor eruptions
+IRCK3_volcano.4 = {
+	type = province_event
+	hidden = yes
+	
+	trigger = {
+		province_id = 5212
+		OR = {
+			AND = {
+				current_date >= 1053.1.1 # 300 AD
+				current_date < 1054.1.1
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_vfx = {
+				name = "volcano_eruption"
+				duration = 0
+			}
+		}
+	}
+}
+# Methana's minor eruptions
+IRCK3_volcano.5 = {
+	type = province_event
+	hidden = yes
+	
+	trigger = {
+		province_id = 7734
+		OR = {
+			AND = {
+				current_date >= 524.1.1 # 230 BC
+				current_date < 525.1.1
 			}
 		}
 	}
