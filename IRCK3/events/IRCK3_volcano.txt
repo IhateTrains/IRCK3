@@ -1,8 +1,10 @@
 ﻿namespace = IRCK3_volcano
 
 #Historical volcanic eruptions in the timeline of IRCK3:
-	# Vesuvius: 217 BC, 79 AD (major), 172 AD, 203 AD, 222 AD, 303 AD, 379 AD, 472 AD, 512 AD, 536 AD, 685 AD, 787 AD
-	# Etna: 140 BC, 135 BC, 122 BC (major), 49 BC, 44 BC, 36-35 BC, 32 BC, 10-20 AD, 38-40 AD, 252 AD
+	# Vesuvius: 217 BC, 79 AD (major), 172 AD, 203 AD, 222 AD, 379 AD, 472 AD, 505 AD, 512 AD, 536 AD, 685 AD, 787 AD
+		# based on http://volcanolive.com/vesuvius.html and Wikipedia
+	# Etna: 141 BC, 135 BC, 126 BC, 122 BC (major), 61 BC, 56 BC, 49 BC, 44 BC, 36 BC, 32 BC, 10 BC, 10 AD, 39 AD, 80 AD, 252 AD, 417 AD, 644 AD, 812 AD, 814 AD, 859 AD
+		# based on http://volcanolive.com/etna2.html
 	# Ararat: none
 	# Methana: none?
 	# Aragats: none?
@@ -72,7 +74,6 @@ IRCK3_volcano.2 = {
 				current_date >= 537.1.1 # 217 BC
 				current_date < 538.1.1
 			}
-			
 			AND = {
 				current_date >= 925.1.1 # 172 AD
 				current_date < 926.1.1
@@ -86,16 +87,16 @@ IRCK3_volcano.2 = {
 				current_date < 976.1.1
 			}
 			AND = {
-				current_date >= 1056.1.1 # 303 AD
-				current_date < 1057.1.1
-			}
-			AND = {
 				current_date >= 1132.1.1 # 379 AD
 				current_date < 1133.1.1
 			}
 			AND = {
 				current_date >= 1225.1.1 # 472 AD
 				current_date < 1226.1.1
+			}
+			AND = {
+				current_date >= 1258.1.1 # 505 AD
+				current_date < 1259.1.1
 			}
 			AND = {
 				current_date >= 1265.1.1 # 512 AD
@@ -114,7 +115,104 @@ IRCK3_volcano.2 = {
 				current_date < 1541.1.1
 			}
 		}
-		
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_vfx = {
+				name = "volcano_eruption"
+				duration = 0
+			}
+		}
+	}
+}
+
+# Etna's minor eruptions
+IRCK3_volcano.3 = {
+	type = province_event
+	hidden = yes
+	
+	trigger = {
+		province_id = 5000
+		OR = {
+			AND = {
+				current_date >= 613.1.1 # 141 BC
+				current_date < 614.1.1
+			}
+			
+			AND = {
+				current_date >= 619.1.1 # 135 BC
+				current_date < 620.1.1
+			}
+			AND = {
+				current_date >= 628.1.1 # 126 BC
+				current_date < 629.1.1
+			}
+			AND = {
+				current_date >= 693.1.1 # 61 BC
+				current_date < 694.1.1
+			}
+			AND = {
+				current_date >= 698.1.1 # 56 BC
+				current_date < 699.1.1
+			}
+			AND = {
+				current_date >= 705.1.1 # 49 BC
+				current_date < 706.1.1
+			}
+			AND = {
+				current_date >= 710.1.1 # 44 BC
+				current_date < 711.1.1
+			}
+			AND = {
+				current_date >= 718.1.1 # 36 BC
+				current_date < 719.1.1
+			}
+			AND = {
+				current_date >= 722.1.1 # 32 BC
+				current_date < 723.1.1
+			}
+			AND = {
+				current_date >= 744.1.1 # 10 BC
+				current_date < 745.1.1
+			}
+			AND = {
+				current_date >= 763.1.1 # 10 AD
+				current_date < 764.1.1
+			}
+			AND = {
+				current_date >= 792.1.1 # 39 AD
+				current_date < 793.1.1
+			}
+			AND = {
+				current_date >= 833.1.1 # 80 AD
+				current_date < 834.1.1
+			}
+			AND = {
+				current_date >= 1005.1.1 # 252 AD
+				current_date < 1006.1.1
+			}
+			AND = {
+				current_date >= 1170.1.1 # 417 AD
+				current_date < 1171.1.1
+			}
+			AND = {
+				current_date >= 1397.1.1 # 644 AD
+				current_date < 1398.1.1
+			}
+			AND = {
+				current_date >= 1565.1.1 # 812 AD
+				current_date < 1566.1.1
+			}
+			AND = {
+				current_date >= 1567.1.1 # 814 AD
+				current_date < 1568.1.1
+			}
+			AND = {
+				current_date >= 1612.1.1 # 859 AD
+				current_date < 1613.1.1
+			}
+		}
 	}
 	
 	immediate = {

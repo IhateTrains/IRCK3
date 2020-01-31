@@ -702,8 +702,8 @@ yearly_disaster_pulse = {
 		IRCK3_volcano.1 # Vesuvius' 79 AD eruption
 		delay = { days = { 1 364 } }
 		IRCK3_volcano.2 # Vesuvius' minor eruptions
-		#delay = { days = { 1 364 } }
-		#IRCK3_volcano.3 # Etna' minor eruptions #TODO
+		delay = { days = { 1 364 } }
+		IRCK3_volcano.3 # Etna's minor eruptions
 	}
 	random_events = {
 		1502 = 0

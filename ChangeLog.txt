@@ -2,4 +2,4 @@
 - Added a decision to divide the Roman Empire into two halves
 - Added three late-game inventions
 - Replaced vanilla random volcanic eruption events with historical eruptions of Etna in 122 BC and Vesuvius in 79 AD
-- Added historical minor eruptions of Vesuvius. Minor eruptions' only effect is the volcano eruption animation
+- Added historical minor eruptions of Vesuvius (217 BC, 172 AD, 203 AD, 222 AD, 379 AD, 472 AD, 505 AD, 512 AD, 536 AD, 685 AD, 787 AD) and Etna (141 BC, 135 BC, 126 BC, 61 BC, 56 BC, 49 BC, 44 BC, 36 BC, 32 BC, 10 BC, 10 AD, 39 AD, 80 AD, 252 AD, 417 AD, 644 AD, 812 AD, 814 AD, 859 AD). Minor eruptions' only effect is the volcano eruption animation
