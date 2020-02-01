@@ -1,0 +1,18 @@
+﻿namespace = IRCK3_earthquake
+
+#Historical earthquakes in the timeline of IRCK3:
+	#sources: https://en.wikipedia.org/wiki/List_of_historical_earthquakes#Pre-11th_century
+	# 226 BC Rhodes earthquake
+	# 60 BC	earthquake on Portugal and Galicia coasts
+	# 17 AD Lydia earthquake
+	# 62 Pompeii earthquake
+	# 115 Antioch earthquake
+	# Galilee earthquake of 363
+	# 365 Crete earthquake
+	# 382 earthquake of Cape St. Vincent, Portugal
+	# 526 Antioch earthquake
+	# 551 Beirut earthquake
+	# 749 Galilee earthquake
+	# 847 Antioch earthquake
+	# December AD 856 earthquake of Corinth, Greece
+	# 856 Damghan earthquake
