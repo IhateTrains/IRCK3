@@ -704,6 +704,13 @@ yearly_disaster_pulse = {
 		IRCK3_volcano.2 # Vesuvius' minor eruptions
 		delay = { days = { 1 364 } }
 		IRCK3_volcano.3 # Etna's minor eruptions
+		delay = { days = { 1 364 } }
+		IRCK3_volcano.4 # Ararat's minor eruptions
+		delay = { days = { 1 364 } }
+		IRCK3_volcano.5 # Methana's minor eruptions
+		
+		delay = { days = { 1 364 } }
+		IRCK3_earthquake.1 # 226 BC Rhodes earthquake
 	}
 	random_events = {
 		1502 = 0

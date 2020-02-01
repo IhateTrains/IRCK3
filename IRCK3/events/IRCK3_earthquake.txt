@@ -16,3 +16,51 @@
 	# 847 Antioch earthquake
 	# December AD 856 earthquake of Corinth, Greece
 	# 856 Damghan earthquake
+
+#226 BC Rhodes earthquake
+IRCK3_earthquake.1 = {
+    type = country_event
+    title = IRCK3_earthquake.1.t
+    desc = IRCK3_earthquake.1.desc
+    picture = natural_disaster
+    
+    goto_location = p:266 #Rhodos
+
+    trigger = {
+    	owns = 266 # Rhodos
+    	AND = {
+   			current_date >= 528.1.1 #226 BC
+   			current_date < 529.1.1
+    	}
+    }
+
+    immediate = {
+    }
+
+    option = {      
+        name = IRCK3_earthquake.1.a
+        p:266 = {
+	    	custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+    }
+    option = {      
+        name = IRCK3_earthquake.1.b
+        p:266 = {
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+    }
+}
