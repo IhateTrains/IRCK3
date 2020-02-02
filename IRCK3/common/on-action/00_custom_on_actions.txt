@@ -711,6 +711,8 @@ yearly_disaster_pulse = {
 		
 		delay = { days = { 1 364 } }
 		IRCK3_earthquake.1 # 226 BC Rhodes earthquake
+		delay = { days = { 1 364 } }
+		IRCK3_earthquake.2 # 60 BC earthquake on Portugal and Galicia coasts
 	}
 	random_events = {
 		1502 = 0

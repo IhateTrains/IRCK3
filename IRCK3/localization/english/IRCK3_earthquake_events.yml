@@ -1,5 +1,9 @@
 l_english:
  IRCK3_earthquake.1.t:0 "The Quakes in Rhodes"
- dhe_earthquake.1.desc:0 "There has been a massive earthquake centered upon Rhodes, with significant damage upon the city.\n\nOur people are looking for us to set aside some of our funds to try and help those in need, to make the best out of the situation."
- dhe_earthquake.1.a:0 "We must aid our brethren in Rhodes!"
- dhe_earthquake.1.b:0 "It will work itself out in time."
+ IRCK3_earthquake.1.desc:0 "There has been a massive earthquake centered upon Rhodes, with significant damage upon the city.\n\nOur people are looking for us to set aside some of our funds to try and help those in need, to make the best out of the situation."
+ IRCK3_earthquake.1.a:0 "We must aid our brethren in Rhodes!"
+ IRCK3_earthquake.1.b:0 "It will work itself out in time."
+ IRCK3_earthquake.2.t:0 "The Quakes in Rhodes"
+ IRCK3_earthquake.2.desc:0 "There has been a massive earthquake on the coasts of Galicia and northern Lustiniania that caused a tsunami.\n\nOur people are looking for us to set aside some of our funds to try and help those in need, to make the best out of the situation."
+ IRCK3_earthquake.2.a:0 "We must aid our brethren on the coasts!"
+ IRCK3_earthquake.2.b:0 "It will work itself out in time."
