@@ -8,3 +8,4 @@
 - Added historical minor eruption of Methana (230 BC)
 - Added the Rhodes earthquake of 226 BC
 - Added the Portugal and Galicia earthquake of 60 BC that caused a tsunami
+- Added the 17 AD Lydia earthquake

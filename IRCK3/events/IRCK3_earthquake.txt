@@ -191,3 +191,123 @@ IRCK3_earthquake.2 = {
         }
     }
 }
+
+#17 AD Lydia earthquake
+IRCK3_earthquake.3 = {
+    type = country_event
+    title = IRCK3_earthquake.3.t
+    desc = IRCK3_earthquake.3.desc
+    picture = natural_disaster
+    goto_location = random_17ad_earthquake_province
+
+    trigger = {
+    	any_owned_province = {
+    		OR = {
+    			province_id = 278 # Pergamon
+    			province_id = 279 # Myrina
+    			province_id = 285 # Cyme
+    			province_id = 287 # Smyrna
+    			province_id = 296 # Magnesia
+    			province_id = 292 # Sardis
+    			province_id = 290 # Ephesus
+    			province_id = 1946 # Hierapolis
+    			province_id = 1958 # Kibyra
+    			province_id = 293 # Philadelphia
+    			province_id = 298 # Aigai
+    			province_id = 299 # Hyrkanis
+    		}
+    	}
+    	AND = {
+   			current_date >= 770.1.1 #17 AD
+   			current_date < 771.1.1
+    	}
+    }
+
+    immediate = {
+    	random_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 278 # Pergamon
+	    			province_id = 279 # Myrina
+	    			province_id = 285 # Cyme
+	    			province_id = 287 # Smyrna
+	    			province_id = 296 # Magnesia
+	    			province_id = 292 # Sardis
+	    			province_id = 290 # Ephesus
+	    			province_id = 1946 # Hierapolis
+	    			province_id = 1958 # Kibyra
+	    			province_id = 293 # Philadelphia
+	    			province_id = 298 # Aigai
+	    			province_id = 299 # Hyrkanis
+	    		}
+			}
+			save_scope_as = random_17ad_earthquake_province
+		}
+    }
+
+    option = {
+        name = IRCK3_earthquake.3.a
+    	add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 278 # Pergamon
+	    			province_id = 279 # Myrina
+	    			province_id = 285 # Cyme
+	    			province_id = 287 # Smyrna
+	    			province_id = 296 # Magnesia
+	    			province_id = 292 # Sardis
+	    			province_id = 290 # Ephesus
+	    			province_id = 1946 # Hierapolis
+	    			province_id = 1958 # Kibyra
+	    			province_id = 293 # Philadelphia
+	    			province_id = 298 # Aigai
+	    			province_id = 299 # Hyrkanis
+	    		}
+			}
+			custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+		}
+    }
+    option = {      
+        name = IRCK3_earthquake.3.b
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 278 # Pergamon
+	    			province_id = 279 # Myrina
+	    			province_id = 285 # Cyme
+	    			province_id = 287 # Smyrna
+	    			province_id = 296 # Magnesia
+	    			province_id = 292 # Sardis
+	    			province_id = 290 # Ephesus
+	    			province_id = 1946 # Hierapolis
+	    			province_id = 1958 # Kibyra
+	    			province_id = 293 # Philadelphia
+	    			province_id = 298 # Aigai
+	    			province_id = 299 # Hyrkanis
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+    }
+}
