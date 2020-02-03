@@ -715,11 +715,13 @@ yearly_disaster_pulse = {
 		IRCK3_earthquake.2 # 60 BC earthquake on Portugal and Galicia coasts
 		delay = { days = { 1 364 } }
 		IRCK3_earthquake.3 # 17 AD Lydia earthquake
+		delay = { days = { 1 364 } }
+		IRCK3_earthquake.4 # AD 62 Pompeii earthquake
 	}
 	random_events = {
-		1502 = 0
-		4 = dhe_earthquake.1 # Minor Earthquake
-		2 = dhe_earthquake.3 # Major Earthquake
+		#1508 = 0
+		#4 = dhe_earthquake.1 # Minor Earthquake # disabled, IRCK3 uses its own earthquake events
+		#2 = dhe_earthquake.3 # Major Earthquake # disabled, IRCK3 uses its own earthquake events
 		#2 = dhe_volcano.1 # Volcano DHE # disabled, IRCK3 uses its own volcanic events
 	}
 }

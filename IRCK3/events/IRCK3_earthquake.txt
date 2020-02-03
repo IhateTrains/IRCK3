@@ -311,3 +311,82 @@ IRCK3_earthquake.3 = {
         }
     }
 }
+
+#62 AD Pompeii earthquake
+IRCK3_earthquake.4 = {
+    type = country_event
+    title = IRCK3_earthquake.4.t
+    desc = IRCK3_earthquake.4.desc
+    picture = natural_disaster
+    fire_only_once = yes
+    goto_location = random_62ad_earthquake_province
+
+    trigger = {
+    	OR = {
+    		owns = 9 #Pompeii
+    		owns = 1713 # Nuceria
+    	}
+    	AND = {
+   			current_date >= 815.1.1 #62 AD BC
+   			current_date < 816.1.1
+    	}
+    }
+
+    immediate = {
+    	random_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 9 # Pompeii
+	    			province_id = 1713 #Nuceria
+	    		}
+			}
+			save_scope_as = random_62ad_earthquake_province
+		}
+    }
+
+    option = {      
+        name = IRCK3_earthquake.4.a
+        add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 9 # Pompeii
+	    			province_id = 1713 #Nuceria
+	    		}
+			}
+	    	custom_tooltip = "earthquake_minor.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_affected
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_minor = yes
+			}
+        }
+    }
+    option = {      
+        name = IRCK3_earthquake.4.b
+		every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 9 # Pompeii
+	    			province_id = 1713 #Nuceria
+	    		}
+			}
+	        custom_tooltip = "earthquake_minor.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_affected
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_minor = yes
+			}
+        }
+    }
+}

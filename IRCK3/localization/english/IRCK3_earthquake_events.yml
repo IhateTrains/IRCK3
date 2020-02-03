@@ -11,3 +11,7 @@ l_english:
  IRCK3_earthquake.3.desc:0 "There has been a massive earthquake in Asia Minor. It occurred during the night and it affected a series of famous cities.\n\nOur people are looking for us to set aside some of our funds to try and help those in need, to make the best out of the situation."
  IRCK3_earthquake.3.a:0 "We must aid our brethren in the damaged cities!"
  IRCK3_earthquake.3.b:0 "It will work itself out in time."
+ IRCK3_earthquake.4.t:0 "The Quakes in Pompeii"
+ IRCK3_earthquake.4.desc:0 "An earthquake has struck Pompeii, Herculanum and Nuceria.\n\nOur people are looking for us to set aside some of our funds to try and help those in need, to make the best out of the situation."
+ IRCK3_earthquake.4.a:0 "We must aid our brethren in the damaged areas!"
+ IRCK3_earthquake.4.b:0 "They should be happy that Vesuvius hasn't erupted..."
