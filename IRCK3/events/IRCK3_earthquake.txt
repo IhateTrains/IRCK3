@@ -327,7 +327,7 @@ IRCK3_earthquake.4 = {
     		owns = 1713 # Nuceria
     	}
     	AND = {
-   			current_date >= 815.1.1 #62 AD BC
+   			current_date >= 815.1.1 #62 AD
    			current_date < 816.1.1
     	}
     }
@@ -370,7 +370,7 @@ IRCK3_earthquake.4 = {
 			}
         }
     }
-    option = {      
+    option = {
         name = IRCK3_earthquake.4.b
 		every_owned_province = {
 			limit = {
@@ -378,6 +378,113 @@ IRCK3_earthquake.4 = {
 	    			province_id = 9 # Pompeii
 	    			province_id = 1713 #Nuceria
 	    		}
+			}
+	        custom_tooltip = "earthquake_minor.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_affected
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_minor = yes
+			}
+        }
+    }
+}
+
+#115 Antioch earthquake
+IRCK3_earthquake.5 = {
+    type = country_event
+    title = IRCK3_earthquake.5.t
+    desc = IRCK3_earthquake.5.desc
+    picture = natural_disaster
+    fire_only_once = yes
+    goto_location = p:790 # Antioch
+
+    trigger = {
+    	OR = {
+    		owns = 790 # Antioch
+    		owns = 782 # Apamea
+    		owns = 748 # Beirut
+    	}
+    	AND = {
+   			current_date >= 868.1.1 #115 AD
+   			current_date < 869.1.1
+    	}
+    }
+
+    immediate = {
+    	random_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 790 # Antioch
+    				province_id = 782 # Apamea
+    				province_id = 748 # Beirut
+	    		}
+			}
+			save_scope_as = random_115ad_earthquake_province
+		}
+    }
+
+    option = {      
+        name = IRCK3_earthquake.5.a
+        add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 790 # Antioch
+    				province_id = 782 # Apamea
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+		every_owned_province = {
+			limit = {
+				province_id = 748 # Beirut
+			}
+	        custom_tooltip = "earthquake_minor.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_affected
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_minor = yes
+			}
+        }
+    }
+    option = {
+        name = IRCK3_earthquake.5.b
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 790 # Antioch
+    				province_id = 782 # Apamea
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+		every_owned_province = {
+			limit = {
+				province_id = 748 # Beirut
 			}
 	        custom_tooltip = "earthquake_minor.tt"
 			add_province_modifier = {

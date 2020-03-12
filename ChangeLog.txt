@@ -1,3 +1,7 @@
+NEXT
+- Added the 62 AD Pompeii earthquake
+- Added the 115 AD Antioch earthquake
+
 2020-02-02 v1.0 "Pliny the Elder"
 - Set the end date to 1522 AUC (769 AD)
 - Integrated "A Christianity Mod", credits to Lensy: https://steamcommunity.com/sharedfiles/filedetails/?id=1725257829
