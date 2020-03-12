@@ -413,16 +413,6 @@ IRCK3_earthquake.5 = {
     }
 
     immediate = {
-    	random_owned_province = {
-			limit = {
-				OR = {
-	    			province_id = 790 # Antioch
-    				province_id = 782 # Apamea
-    				province_id = 748 # Beirut
-	    		}
-			}
-			save_scope_as = random_115ad_earthquake_province
-		}
     }
 
     option = {      
@@ -485,6 +475,113 @@ IRCK3_earthquake.5 = {
 		every_owned_province = {
 			limit = {
 				province_id = 748 # Beirut
+			}
+	        custom_tooltip = "earthquake_minor.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_affected
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_minor = yes
+			}
+        }
+    }
+}
+
+#363 Galilee earthquake
+IRCK3_earthquake.6 = {
+    type = country_event
+    title = IRCK3_earthquake.6.t
+    desc = IRCK3_earthquake.6.desc
+    picture = natural_disaster
+    fire_only_once = yes
+    goto_location = random_363ad_earthquake_province
+
+    trigger = {
+    	OR = {
+    		owns = 677 # Sepphoris
+    		owns = 648 # Nabratein
+    		owns = 729 # Petra
+    	}
+    	AND = {
+   			current_date >= 1116.1.1 #363 AD
+   			current_date < 1117.1.1
+    	}
+    }
+
+    immediate = {
+    	random_owned_province = {
+			limit = {
+				OR = {
+					province_id = 677 # Sepphoris
+	    			province_id = 648 # Nabratein
+	    			province_id = 729 # Petra
+	    		}
+			}
+			save_scope_as = random_363ad_earthquake_province
+		}
+    }
+
+    option = {      
+        name = IRCK3_earthquake.6.a
+        add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 648 # Nabratein
+	    			province_id = 729 # Petra
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+		every_owned_province = {
+			limit = {
+				province_id = 677 # Sepphoris
+			}
+	        custom_tooltip = "earthquake_minor.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_affected
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_minor = yes
+			}
+        }
+    }
+    option = {
+        name = IRCK3_earthquake.6.b
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 648 # Nabratein
+	    			province_id = 729 # Petra
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+		every_owned_province = {
+			limit = {
+				province_id = 677 # Sepphoris
 			}
 	        custom_tooltip = "earthquake_minor.tt"
 			add_province_modifier = {

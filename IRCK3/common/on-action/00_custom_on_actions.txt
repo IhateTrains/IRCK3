@@ -715,8 +715,12 @@ yearly_disaster_pulse = {
 		IRCK3_earthquake.2 # 60 BC earthquake on Portugal and Galicia coasts
 		delay = { days = { 1 364 } }
 		IRCK3_earthquake.3 # 17 AD Lydia earthquake
-		delay = { days = { 1 364 } }
+		delay = { days = { 34 } }
 		IRCK3_earthquake.4 # AD 62 Pompeii earthquake
+		delay = { days = { 346 } }
+		IRCK3_earthquake.5 # AD 115 Antioch earthquake
+		delay = { days = { 138 } }
+		IRCK3_earthquake.6 # AD 363 Galilee earthquake
 	}
 	random_events = {
 		#1508 = 0
