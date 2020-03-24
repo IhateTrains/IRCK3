@@ -879,20 +879,6 @@ IRCK3_earthquake.9 = {
     }
 
     immediate = {
-    	random_owned_province = {
-			limit = {
-				OR = {
-		    		province_id = 743 # Tyrus
-		    		province_id = 746
-		    		province_id = 747
-		    		province_id = 748 # Beirut
-		    		province_id = 766
-		    		province_id = 767
-		    		province_id = 769 # Tripoli
-	    		}
-			}
-			save_scope_as = random_363ad_earthquake_province
-		}
     }
 
     option = {      
@@ -931,8 +917,13 @@ IRCK3_earthquake.9 = {
         every_owned_province = {
 			limit = {
 				OR = {
-	    			province_id = 648 # Nabratein
-	    			province_id = 729 # Petra
+	    			province_id = 743 # Tyrus
+		    		province_id = 746
+		    		province_id = 747
+		    		province_id = 748 # Beirut
+		    		province_id = 766
+		    		province_id = 767
+		    		province_id = 769 # Tripoli
 	    		}
 			}
 	        custom_tooltip = "earthquake_medium.tt"
