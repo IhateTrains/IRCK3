@@ -723,6 +723,8 @@ yearly_disaster_pulse = {
 		IRCK3_earthquake.6 # AD 363 Galilee earthquake
 		delay = { days = { 201 } }
 		IRCK3_earthquake.7 # AD 365 Crete earthquake
+		delay = { days = { 139 } }
+		IRCK3_earthquake.8 # AD 526 Antioch earthquake
 	}
 	random_events = {
 		#1508 = 0
