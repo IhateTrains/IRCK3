@@ -852,3 +852,97 @@ IRCK3_earthquake.8 = {
         }
     }
 }
+
+#551 Beirut earthquake
+IRCK3_earthquake.9 = {
+    type = country_event
+    title = IRCK3_earthquake.9.t
+    desc = IRCK3_earthquake.9.desc
+    picture = natural_disaster
+    fire_only_once = yes
+    goto_location = p:748 #Beirut
+
+    trigger = {
+    	OR = {
+    		owns = 743 # Tyrus
+    		owns = 746
+    		owns = 747
+    		owns = 748 # Beirut
+    		owns = 766
+    		owns = 767
+    		owns = 769 # Tripoli
+    	}
+    	AND = {
+   			current_date >= 1304.1.1 #551 AD
+   			current_date < 1305.1.1
+    	}
+    }
+
+    immediate = {
+    	random_owned_province = {
+			limit = {
+				OR = {
+		    		province_id = 743 # Tyrus
+		    		province_id = 746
+		    		province_id = 747
+		    		province_id = 748 # Beirut
+		    		province_id = 766
+		    		province_id = 767
+		    		province_id = 769 # Tripoli
+	    		}
+			}
+			save_scope_as = random_363ad_earthquake_province
+		}
+    }
+
+    option = {      
+        name = IRCK3_earthquake.9.a
+        add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 4
+		}
+		current_ruler = {
+			add_popularity = popularity_medium
+		}
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 743 # Tyrus
+		    		province_id = 746
+		    		province_id = 747
+		    		province_id = 748 # Beirut
+		    		province_id = 766
+		    		province_id = 767
+		    		province_id = 769 # Tripoli
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 730
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+    }
+    option = {
+        name = IRCK3_earthquake.9.b
+        every_owned_province = {
+			limit = {
+				OR = {
+	    			province_id = 648 # Nabratein
+	    			province_id = 729 # Petra
+	    		}
+			}
+	        custom_tooltip = "earthquake_medium.tt"
+			add_province_modifier = {
+				name = province_diminishment_earthquake_ravaged
+				duration = 2555
+			}
+			hidden_effect = {
+				province_pop_disaster_medium = yes
+			}
+        }
+    }
+}

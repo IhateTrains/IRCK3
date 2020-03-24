@@ -4,6 +4,7 @@ NEXT "Ammianus Marcellinus"
 - Added the 363 AD Galilee earthquake
 - Added the 365 AD Crete earthquake
 - Added the 526 AD Antioch earthquake
+- Added the 551 AD Beirut earthquake
 
 2020-02-02 v1.0 "Pliny the Elder"
 - Set the end date to 1522 AUC (769 AD)
