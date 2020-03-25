@@ -6,7 +6,7 @@ ERE = {
 	color2 = "roman_gold"
 
 	colored_emblem = {
-		texture = "ce_IRK3_chi_rho.dds"
+		texture = "ce_IRCK3_chi_rho.dds"
 		color1 = "roman_gold"
 	}
 }
@@ -17,7 +17,7 @@ ERE_REVOLT = {
 	color2 = "ck2_purple"
 
 	colored_emblem = {
-		texture = "ce_IRK3_chi_rho.dds"
+		texture = "ce_IRCK3_chi_rho.dds"
 		color1 = "ck2_purple"
 	}
 }
@@ -28,7 +28,7 @@ WRE = {
 	color2 = "roman_gold"
 
 	colored_emblem = {
-		texture = "ce_IRK3_chi_rho.dds"
+		texture = "ce_IRCK3_chi_rho.dds"
 		color1 = "roman_gold"
 	}
 }
@@ -39,7 +39,29 @@ WRE_REVOLT = {
 	color2 = "roman_red"
 
 	colored_emblem = {
-		texture = "ce_IRK3_chi_rho.dds"
+		texture = "ce_IRCK3_chi_rho.dds"
 		color1 = "roman_red"
+	}
+}
+
+HRR = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_yellow"
+	color2 = "ck2_black"
+
+	colored_emblem = {
+		texture = "ce_IRCK3_hre_eagle.dds"
+		color1 = "ck2_black"
+	}
+}
+
+HRR_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "roman_red"
+	color2 = "ck2_black"
+
+	colored_emblem = {
+		texture = "ce_IRCK3_hre_eagle.dds"
+		color1 = "ck2_black"
 	}
 }

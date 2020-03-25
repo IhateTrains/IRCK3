@@ -1,0 +1,7 @@
+# Colors are mostly used by flags, but are seperated because they can be used by other parts as well. 
+
+colors = {
+	hre_orange = rgb { 254 114 81 }
+	hre_yellow = rgb { 250 206 72 }
+}
+
