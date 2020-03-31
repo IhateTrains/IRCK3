@@ -1,4 +1,4 @@
-NEXT "Ammianus Marcellinus"
+2020-03-31 v1.1 "Ammianus Marcellinus"
 - Compatibility with 1.4 patch
 - Added the 62 AD Pompeii earthquake
 - Added the 115 AD Antioch earthquake
