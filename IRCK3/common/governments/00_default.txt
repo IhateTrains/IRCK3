@@ -7,7 +7,7 @@ aristocratic_republic = { #military party
 	
 	bonus = {
 		global_freemen_happyness = 0.10
-		monthly_character_loyalty = 0.02
+		character_loyalty = 5
 	}
 	base = {
 		country_civilization_value = 35
@@ -18,6 +18,10 @@ aristocratic_republic = { #military party
 	ruler_term = 1
 	
 	has_co_ruler = yes
+	
+	color = hsv { 0.6  0.8  0.7 }
+	
+	can_deify_ruler = no
 }
 
 theocratic_republic = { #religious party
@@ -37,6 +41,8 @@ theocratic_republic = { #religious party
 
 	election_delay = 10
 	ruler_term = 1
+	
+	color = hsv { 0.6  0.7  0.5 }
 }
 
 oligarchic_republic = { #civic party
@@ -53,9 +59,13 @@ oligarchic_republic = { #civic party
 	}
 	
 	minimum_electable_age = 40
-
+	
+	can_deify_ruler = no
+	
 	election_delay = 10
 	ruler_term = 1
+	
+	color = hsv { 0.6  0.75  0.6 }
 }
 
 democratic_republic = { #populist/stepping stone party
@@ -75,6 +85,10 @@ democratic_republic = { #populist/stepping stone party
 
 	election_delay = 10
 	ruler_term = 1
+	
+	color = hsv { 0.6  0.85  0.9 }
+	
+	can_deify_ruler = no
 }
 
 plutocratic_republic = { #mercantile party
@@ -94,6 +108,33 @@ plutocratic_republic = { #mercantile party
 
 	election_delay = 10
 	ruler_term = 1
+	
+	can_deify_ruler = no
+	
+	color = hsv { 0.6  0.9  0.8 }
+}
+
+athenian_republic = { # Mission Reward
+	military_ideas = 1
+	civic_ideas = 1
+	oratory_ideas = 1
+	religious_ideas = 1
+	type = republic
+	
+	bonus = {
+		enact_law_cost_modifier = -0.25
+		global_citizen_happyness = 0.15
+	}
+	base = {
+		country_civilization_value = 40
+	}
+	
+	minimum_electable_age = 25
+
+	election_delay = 10
+	ruler_term = 1
+	
+	color = hsv { 0.62  0.87  0.88 }
 }
 
 dictatorship = {
@@ -116,6 +157,8 @@ dictatorship = {
 	ruler_consort_benefits = yes
 	
 	election_delay = 0
+	
+	color = hsv { 0  0.8  0.5 }
 }
 
 #Monarchies:
@@ -139,6 +182,8 @@ despotic_monarchy = { #stepping stone/starting type
 	
 	
 	ruler_consort_benefits = yes
+	
+	color = hsv { 0  0.85  0.4 }
 }
 
 aristocratic_monarchy = {
@@ -159,6 +204,8 @@ aristocratic_monarchy = {
 	use_regnal_numbers = yes
 	
 	ruler_consort_benefits = yes
+	
+	color = hsv { 0  0.8  0.3 }
 }
 
 stratocratic_monarchy = {
@@ -168,7 +215,7 @@ stratocratic_monarchy = {
 	
 	bonus = {
 		global_freemen_output = 0.10
-		monthly_character_loyalty = 0.02
+		character_loyalty = 5
 	}
 	base = {
 		country_civilization_value = 35
@@ -179,6 +226,8 @@ stratocratic_monarchy = {
 	use_regnal_numbers = yes
 	
 	ruler_consort_benefits = yes
+	
+	color = hsv { 0  0.75  0.2 }
 }
 
 theocratic_monarchy = {
@@ -196,6 +245,8 @@ theocratic_monarchy = {
 	use_regnal_numbers = yes
 	
 	ruler_consort_benefits = yes
+	
+	color = hsv { 0  0.7  0.1 }
 }
 
 plutocratic_monarchy = {
@@ -213,6 +264,8 @@ plutocratic_monarchy = {
 	use_regnal_numbers = yes
 	
 	ruler_consort_benefits = yes
+	
+	color = hsv { 0  0.9  0.5 }
 }
 
 imperium = {
@@ -236,6 +289,9 @@ imperium = {
 	
 	election_delay = 0
 	ruler_consort_benefits = yes
+	
+	
+	color = hsv { 0.9  0.8  0.1 }
 }
 
 imperial_cult = {
@@ -260,6 +316,8 @@ imperial_cult = {
 	
 	election_delay = 0
 	ruler_consort_benefits = yes
+	
+	color = hsv { 0.9  0.7  0.12 }
 }
 
 # Tribal Governments
@@ -279,6 +337,8 @@ tribal_chiefdom = {
 	}
 
 	election_delay = 0
+	
+	color = hsv { 0.333  0.8  0.2 }
 }
 
 tribal_kingdom = {
@@ -294,6 +354,8 @@ tribal_kingdom = {
 	}
 
 	election_delay = 0
+	
+	color = hsv { 0.333  0.85  0.35 }
 }
 
 tribal_federation = {
@@ -313,4 +375,6 @@ tribal_federation = {
 	}
 
 	election_delay = 0
+	
+	color = hsv { 0.333  0.7  0.5 }
 }

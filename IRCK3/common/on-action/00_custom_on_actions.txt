@@ -21,8 +21,9 @@ on_republic_ruler_change = {
 disloyal_powerful_characters_pulse = {
 	trigger = {
 		is_ai = no
-		NOT = {
+		NOR = {
 			has_variable = disloyal_powerful_characters_pulse_cd
+			has_variable = death_to_tyrants_flag
 		}
 	}
 	effect = {
@@ -172,6 +173,7 @@ yearly_debt_recovery_pulse = {
 					target = root
 				}
 			}
+			add_loyalty = debt_paid_off
 			add_character_modifier = {
 				name = debt_paid_off
 				duration = 730
@@ -315,10 +317,11 @@ main_event_pulse_country = {
 		dhe_bactria.3
 		dhe_buddhism.2
 		flavor_arm.5
+		dhe_carthage.15
 	}
 	random_events = {
-		
 		500 = 0
+		100 = comet.5
 		250 = character_events.27 # Ruler religion switch
 		250 = character_events.25 # Heir religion switch
 		250 = character_events.26 # Heir culture switch
@@ -465,6 +468,7 @@ main_event_pulse_country = {
 		10 = rel_flavor_hellenic.11
 		50 = rel_flavor_hellenic.14
 		100 = rel_flavor_hellenic.15
+		20 = rel_flavor_hellenic.16
 		100 = rel_flavor_canaanite.1 # Rel Flavor Canaanite
 		100 = rel_flavor_canaanite.2
 		100 = rel_flavor_canaanite.3
@@ -641,7 +645,7 @@ main_event_pulse_country = {
 		250 = ip_monarchy.30
 		250 = ip_monarchy.34
 		250 = ip_monarchy.35
-		250 = ip_monarchy.36
+		150 = ip_monarchy.36
 		# CONSORT
 		300 = ip_monarchy.42
 		300 = ip_monarchy.48
@@ -682,6 +686,20 @@ main_event_pulse_country = {
 		# THRACE EVENTS
 		500 = dhe_thrace_flavor.1
 		1000 = dhe_thrace_flavor.2
+		1000 = dhe_thrace.1
+		1000 = dhe_thrace.8
+		500 = dhe_thrace.9
+		# CYR Events
+		1000 = flavor_egy.12
+		# me gre 2 convince events
+		250 = me_greek_2_greece.30
+		500 = me_greek_2_greece.31
+	}
+}
+
+yearly_gambling_pulse = {
+	events = {
+		gambling.1
 	}
 }
 
@@ -1021,19 +1039,6 @@ mercenary_adventurer_pulse = {
 	}
 }
 
-yearly_holdings_bonanza = {
-	trigger = {
-		wealth >= character_holding_price_svalue
-		num_holdings_owned < max_holdings_owned
-	}
-	
-	random_events = {
-		90 = 0
-		10 = holding_mech.1
-	}
-	
-}
-
 consul_conspiracy_pulse = {
 	trigger = {
 		tag = ROM
@@ -1215,8 +1220,8 @@ ip_rep_66_development_on_action = {
 		10 = ip_republic.69
 		10 = ip_republic.72
 		10 = ip_republic.73	
-		10 = ip_republic.74	
-		10 = ip_republic.75
+		15 = ip_republic.74	
+		15 = ip_republic.75
 		10 = ip_republic.78
 		10 = ip_republic.80
 	}
@@ -1379,5 +1384,24 @@ yearly_good_advisor_pulse = {
 		1 = stability.6
 		1 = stability.9
 		4 = 0
+	}
+}
+
+monthly_syracuse_revolution_pulse = {
+	trigger = {
+		tag = SYR
+		current_ruler = { has_variable = me_syr_current_tyrant_flag }
+		any_character = { has_variable = me_syr_democracy_leader }
+	}
+	random_events = {
+		5 = me_syracuse_1_democracy.25
+		20 = 0
+	}
+}
+
+content_clear_holdings = {
+	random_events = {
+		50 = 0
+		50 = scheme.3
 	}
 }

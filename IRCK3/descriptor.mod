@@ -1,5 +1,5 @@
 name="I:R to CK3 Timeline Extension"
-supported_version="1.3.2"
+supported_version="1.4"
 tags={
 	"Historical"
 }
