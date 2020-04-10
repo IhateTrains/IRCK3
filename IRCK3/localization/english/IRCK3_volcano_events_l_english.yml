@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  IRCK3_volcano.1.t:0 "The Fury of Vesuvius"
  IRCK3_volcano.1.d:0 "The volcano of Mount Vesuvius has erupted on [GetDateString] causing tremendous damage.\n Ash, mud and rocks from this eruption buried the cities of Pompeii and Herculaneum and killed thousands.\nNow that the eruption is finally over we must look to restore the region."
  IRCK3_volcano.1.a:0 "A disaster!"

@@ -11,8 +11,6 @@ l6_christian.1 = {
 	
 	fire_only_once = yes
 	
-	#
-	
 	trigger = {
 		current_date > 784.5.20 #30AD (should it be 33AD?) just over 40 days after passover
 		p:687 = {
@@ -91,8 +89,6 @@ l6_christian.3 = {
 	
 	#left_portrait = current_ruler
 	
-	#
-	
 	trigger = {
 		has_global_variable = christianity_spreads_locally
 		any_owned_province = {
@@ -145,8 +141,6 @@ l6_christian.4 = {
 	
 	#left_portrait = current_ruler
 	
-	#
-	
 	trigger = {
 		has_global_variable = christianity_spreads_locally
 		any_owned_province = {
@@ -189,8 +183,6 @@ l6_christian.5 = {
 	picture = crucifixion
 	
 	#left_portrait = current_ruler
-	
-	#
 	
 	trigger = {
 		current_date > 450.1.1
@@ -247,22 +239,5 @@ l6_christian.5 = {
 	}
 }
 
-#Gentiles Convert - nations that control part of the Holy Land
-
-
-#Character Converts - nations with Christians
-##Include option to force character to deconvert
-
-#Character accepts
-#Character refuses
-
-#Ruler convertion option
+#Ruler conversion option
 ##Only if ruler is in civil war (like Constantine) or pops are X% converted
-
-#Change to Christianity
-
-##########
-#Thomas
-
-#Paul
-
