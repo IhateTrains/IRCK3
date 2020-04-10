@@ -1,3 +1,7 @@
+2020-04-10 v1.1.1
+- Fixed the Roman republic election laws: Consultum Ultimum now sets the term duration to 10 years as in vanilla. Princeps Civitatis now sets the term duration to 50 years as in vanilla. Lex Antonia, which reduces term duration from 5 to 2 years in vanilla, now has no effect.
+ - Fixed the generic republic election laws: Lifetime Elections now sets the term duration to 50 years as in vanilla. Extended Terms not sets the term duration to 10 years as in vanilla. Shortened Terms now has no effect, and has been made the default law. Electoral Model now sets the term duration to 5 years as in vanilla.
+
 2020-03-31 v1.1 "Ammianus Marcellinus"
 - Compatibility with 1.4 patch
 - Added the 62 AD Pompeii earthquake
