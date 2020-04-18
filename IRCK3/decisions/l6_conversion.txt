@@ -60,11 +60,11 @@
 				set_character_religion = christianity
 			}
 			custom_tooltip = religion_conversion_tooltip
-			hidden_effect = {
-				every_character = {
-					add_loyalty = -20
-				}
-			}
+			#hidden_effect = {
+			#	every_character = {
+			#		add_loyalty = -20
+			#	}
+			#}
 		}
 		
 		ai_will_do = {

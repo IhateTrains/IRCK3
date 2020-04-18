@@ -630,7 +630,7 @@ IRCK3_earthquake.7 = {
     		}
     		owns = 434 #Patras - ravaged
     		owns = 433 # ravaged
-    		owns - 471 #Kythera - ravaged
+    		owns = 471 #Kythera - ravaged
 
     		#Crete - ravaged
     		any_owned_province = {
