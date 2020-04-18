@@ -1,3 +1,7 @@
+NEXT
+- Compatibility with 1.4.2 patch
+- Moved a modified vanilla file to a proper folder
+
 2020-04-14 v1.1.2
 - Fixed a lot of mod's localization not being displayed properly
 
