@@ -677,7 +677,7 @@ IRCK3_earthquake.7 = {
     				province_id = 334
     				province_id = 434
 		    		province_id = 433
-		    		province_id - 471
+		    		province_id = 471
 		    		is_in_area = crete_area
 	    		}
 			}
@@ -741,7 +741,7 @@ IRCK3_earthquake.7 = {
     				province_id = 334
     				province_id = 434
 		    		province_id = 433
-		    		province_id - 471
+		    		province_id = 471
 		    		is_in_area = crete_area
 	    		}
 			}
