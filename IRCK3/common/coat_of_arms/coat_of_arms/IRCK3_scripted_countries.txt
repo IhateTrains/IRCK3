@@ -65,3 +65,25 @@ HRR_REVOLT = {
 		color1 = "ck2_black"
 	}
 }
+
+UMM = {
+	pattern = "pattern_solid.tga"
+	color1 = "offwhite"
+	color2 = "ck2_black"
+
+	colored_emblem = {
+		texture = "ce_IRCK3_ummah.dds"
+		color1 = "ck2_black"
+	}
+}
+
+UMM_REVOLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "roman_red"
+	color2 = "ck2_black"
+
+	colored_emblem = {
+		texture = "ce_IRCK3_ummah.dds"
+		color1 = "ck2_black"
+	}
+}

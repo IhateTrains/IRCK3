@@ -1,0 +1,81 @@
+﻿namespace = IRCK3_islam
+
+IRCK3_islam.1 = { #rumors about man named Muhammad getting a vision of the Arch-angel Gabriel 
+    type = province_event
+    title = IRCK3_islam.1.t
+    desc = IRCK3_islam.1.desc
+    picture = scribe_tools
+
+    goto_location = ROOT
+    
+    left_portrait = owner.current_ruler
+
+    trigger = {
+    	province_id = 7575 # Mecca
+    	region = { #for Mecca it's arabia_region
+    		any_region_province = {
+    			any_pops_in_province = { pop_religion = judaism }
+    			any_pops_in_province = { pop_religion = christianity }
+    		}
+    	}
+    	current_date >= 1153.1.1 # 400 AD 
+    }
+
+    immediate = {
+    	create_character = {
+    		first_name = "Muhammad"
+    		culture = ROOT.culture 
+    		religion = islam
+    		age = 40
+    		female = no
+    		#family = <family>
+    		add_nickname = NICKNAME_PROPHET_OF_ISLAM
+
+    		save_scope_as = muhammad
+    	}
+    }
+
+    option = { # they are dangerous, persecute them
+        name = IRCK3_islam.1.a
+        set_local_variable = muhammad_persecuted
+    }
+    option = { # they aren't dangerous, do nothing
+        name = IRCK3_islam.1.b
+        set_local_variable = muhammad_tolerated
+    }
+}
+
+#IRCK3_islam.2 reserved - Muhammad attracts followers (event used for both Mecca and Medina)
+IRCK3_islam.2 = {
+    type = province_event
+    title = IRCK3_islam.2.t
+    desc = IRCK3_islam.2.desc
+    picture = aqueducts
+
+    goto_location = ROOT
+    
+    left_portrait = owner.current_ruler
+
+    trigger = {
+    	scope:muhammad = {
+    		is_at_location = ROOT # ROOT is province
+    	}
+    	has_local_variable = muhammad_persecuted
+    }
+
+    immediate = {
+    	# 3 speeds: muhammad_persecuted, muhammad_tolerated (neutral), constitution of Medina (accelerated)
+    	if = {
+    		limit = { has_local_variable = muhammad_persecuted }
+
+    	}
+    }
+
+    option = {      
+        name = IRCK3_islam.2.a
+    }
+    option = {      
+        name = IRCK3_islam.2.b
+    }
+}
+#IRCK3_islam.3 reserved - event for the ruler of Mecca about hegira (Muslims emigrating to Medina) if mecca_muhammad_persecuted variable is set 
