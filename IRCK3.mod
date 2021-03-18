@@ -4,4 +4,4 @@ path = "mod/IRCK3"
 tags={
 	"Historical"
 }
-supported_version="1.4.2"
+supported_version="2.0"

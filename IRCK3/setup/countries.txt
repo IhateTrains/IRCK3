@@ -69,7 +69,14 @@ TYS = "setup/countries/greece/tyras.txt"
 TYG = "setup/countries/greece/tyrgetae.txt"
 MAE = "setup/countries/greece/maeotia.txt"
 CHS = "setup/countries/greece/chersonesus.txt"
+ORG = "setup/countries/greece/orgame.txt"
 ISO = "setup/countries/greece/istros.txt"
+TMS = "setup/countries/greece/tomis.txt"
+KTS = "setup/countries/greece/kallatis.txt"
+KOI = "setup/countries/greece/krounoi.txt"
+ODS = "setup/countries/greece/odessos.txt"
+MES = "setup/countries/greece/mesembria.txt"
+APL = "setup/countries/greece/apollonia.txt"
 SND = "setup/countries/caucasiamesopotamia/sindica.txt"
 SCE = "setup/countries/caucasiamesopotamia/siracia.txt"
 LGA = "setup/countries/caucasiamesopotamia/legia.txt"
@@ -311,6 +318,7 @@ DEI = "setup/countries/iberia/deitania.txt"
 EBI = "setup/countries/iberia/eburania.txt"
 MTS = "setup/countries/iberia/mantesania.txt"
 GRM = "setup/countries/iberia/garmania.txt"
+IBA = "setup/countries/iberia/ibasim.txt"
 
 #African
 
@@ -343,6 +351,7 @@ EMP = "setup/countries/africa/emporia.txt"
 IOL = "setup/countries/africa/iol.txt"
 KUA = "setup/countries/africa/kerkouane.txt"
 DOD = "setup/countries/africa/dodekaschoinos.txt"
+DAL = "setup/countries/africa/elaia.txt"
 
 #Gaul
 
@@ -629,6 +638,49 @@ OPU = "setup/countries/greece/opus.txt"
 PHO = "setup/countries/greece/phocis.txt"
 DLP = "setup/countries/greece/delphi.txt"
 
+# Epirus
+AMK = "setup/countries/greece/ambrakia.txt"
+
+# Crete
+LAP = "setup/countries/greece/lappa.txt"
+ARD = "setup/countries/greece/arcades.txt"
+
+# Maedia
+MAD = "setup/countries/greece/maedia.txt"
+
+# Illyrian islands
+ASP = "setup/countries/illyria_dacia/asparos.txt"
+PHA = "setup/countries/illyria_dacia/pharos.txt"
+EPM = "setup/countries/illyria_dacia/epidaurum.txt"
+ISA = "setup/countries/illyria_dacia/issa.txt"
+KOK = "setup/countries/illyria_dacia/korkyramelaina.txt"
+APO = "setup/countries/illyria_dacia/apollonia.txt"
+
+### Marius Anatolia
+SLG = "setup/countries/anatolia/selgia.txt"
+TRM = "setup/countries/anatolia/termessia.txt"
+SSG = "setup/countries/anatolia/sagalassia.txt"
+KTN = "setup/countries/anatolia/kotennia.txt"
+PDL = "setup/countries/anatolia/pednelissia.txt"
+HMD = "setup/countries/anatolia/homanadia.txt"
+SMS = "setup/countries/anatolia/sesamos.txt"
+TIE = "setup/countries/anatolia/tieion.txt"
+LYC = "setup/countries/anatolia/lycia.txt"
+ISU = "setup/countries/anatolia/isauria.txt"
+LAR = "setup/countries/anatolia/larandia.txt"
+MYD = "setup/countries/anatolia/mariandynia.txt"
+AKY = "setup/countries/anatolia/arykandia.txt"
+ORO = "setup/countries/anatolia/oroandia.txt"
+ABL = "setup/countries/anatolia/ambladia.txt"
+ISI = "setup/countries/anatolia/isindia.txt"
+LAL = "setup/countries/anatolia/lalasia.txt"
+KEN = "setup/countries/anatolia/kennataia.txt"
+OEO = "setup/countries/anatolia/oenoandia.txt"
+KIB = "setup/countries/anatolia/kibyratia.txt"
+OML = "setup/countries/anatolia/ormelia.txt"
+TYM = "setup/countries/anatolia/tymandia.txt"
+KAK = "setup/countries/anatolia/kaukonia.txt"
+OBE = "setup/countries/anatolia/olbe.txt"
 
 #IRCK3 mod
 RSD = "countries/arabia/rashidun.txt"

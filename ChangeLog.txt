@@ -1,5 +1,5 @@
 NEXT
-- Compatibility with 1.4.2 patch
+- Compatibility with 2.0 patch, credits to @Holepunch
 - Moved a modified vanilla file to the proper folder
 
 2020-04-14 v1.1.2
