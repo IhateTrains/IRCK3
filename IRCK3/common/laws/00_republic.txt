@@ -1,4 +1,4 @@
-republic_military_recruitment_laws = { # Military Reforms
+﻿republic_military_recruitment_laws = { # Military Reforms
 			potential = {
 				is_republic = yes
 				NOT = {

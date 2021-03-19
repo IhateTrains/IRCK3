@@ -1,4 +1,4 @@
-republic_military_recruitment_laws_rom = { # Military Reforms
+﻿republic_military_recruitment_laws_rom = { # Military Reforms
 	potential = {
 		is_republic = yes
 		tag = ROM
