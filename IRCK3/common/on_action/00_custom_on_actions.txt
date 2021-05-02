@@ -797,37 +797,39 @@ yearly_disaster_pulse = {
 	}
 	events = {
 		natural_disaster_events.1 # Etna's 122 BC eruption
-		delay = { days = { 302 } } # delay to make Vesuvius erupt c. October 30
-		IRCK3_volcano.1 # Vesuvius' 79 AD eruption
+	}
+	on_actions = {
+		delay = { days = 302 } # delay to make Vesuvius erupt c. October 30
+		IRCK3_volcano_1_on_action # Vesuvius' 79 AD eruption
 		delay = { days = { 1 364 } }
-		IRCK3_volcano.2 # Vesuvius' minor eruptions
+		IRCK3_volcano_2_on_action # Vesuvius' minor eruptions
 		delay = { days = { 1 364 } }
-		IRCK3_volcano.3 # Etna's minor eruptions
+		IRCK3_volcano_3_on_action # Etna's minor eruptions
 		delay = { days = { 1 364 } }
-		IRCK3_volcano.4 # Ararat's minor eruptions
+		IRCK3_volcano_4_on_action # Ararat's minor eruptions
 		delay = { days = { 1 364 } }
-		IRCK3_volcano.5 # Methana's minor eruptions
+		IRCK3_volcano_5_on_action # Methana's minor eruptions
 
 		delay = { days = { 1 364 } }
-		IRCK3_earthquake.1 # 226 BC Rhodes earthquake
+		IRCK3_earthquake_1_on_action # 226 BC Rhodes earthquake
 		delay = { days = { 1 364 } }
-		IRCK3_earthquake.2 # 60 BC earthquake on Portugal and Galicia coasts
+		IRCK3_earthquake_2_on_action # 60 BC earthquake on Portugal and Galicia coasts
 		delay = { days = { 1 364 } }
-		IRCK3_earthquake.3 # 17 AD Lydia earthquake
-		delay = { days = { 35 } }
-		IRCK3_earthquake.4 # AD 62 Pompeii earthquake
-		delay = { days = { 346 } }
-		IRCK3_earthquake.5 # AD 115 Antioch earthquake
-		delay = { days = { 138 } }
-		IRCK3_earthquake.6 # AD 363 Galilee earthquake
-		delay = { days = { 201 } }
-		IRCK3_earthquake.7 # AD 365 Crete earthquake
-		delay = { days = { 139 } }
-		IRCK3_earthquake.8 # AD 526 Antioch earthquake
-		delay = { days = { 189 } }
-		IRCK3_earthquake.9 # AD 551 Beirut earthquake
-		delay = { days = { 17 } }
-		IRCK3_earthquake.10 # AD 749 Galilee earthquake
+		IRCK3_earthquake_3_on_action # 17 AD Lydia earthquake
+		delay = { days = 35 }
+		IRCK3_earthquake_4_on_action # AD 62 Pompeii earthquake
+		delay = { days = 346 }
+		IRCK3_earthquake_5_on_action # AD 115 Antioch earthquake
+		delay = { days = 138 }
+		IRCK3_earthquake_6_on_action # AD 363 Galilee earthquake
+		delay = { days = 201 }
+		IRCK3_earthquake_7_on_action # AD 365 Crete earthquake
+		delay = { days = 139 }
+		IRCK3_earthquake_8_on_action # AD 526 Antioch earthquake
+		delay = { days = 189 }
+		IRCK3_earthquake_9_on_action # AD 551 Beirut earthquake
+		delay = { days = 17 }
+		IRCK3_earthquake_10_on_action # AD 749 Galilee earthquake
 	}
 	random_events = {
 		#1508 = 0

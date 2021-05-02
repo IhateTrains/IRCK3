@@ -1,0 +1,18 @@
+﻿#volcanic
+IRCK3_volcano_1_on_action = { events = { IRCK3_volcano.1 } }
+IRCK3_volcano_2_on_action = { events = { IRCK3_volcano.2 } }
+IRCK3_volcano_3_on_action = { events = { IRCK3_volcano.3 } }
+IRCK3_volcano_4_on_action = { events = { IRCK3_volcano.4 } }
+IRCK3_volcano_5_on_action = { events = { IRCK3_volcano.5 } }
+
+#earthquakes
+IRCK3_earthquake_1_on_action = { events = { IRCK3_earthquake.1 } }
+IRCK3_earthquake_2_on_action = { events = { IRCK3_earthquake.2 } }
+IRCK3_earthquake_3_on_action = { events = { IRCK3_earthquake.3 } }
+IRCK3_earthquake_4_on_action = { events = { IRCK3_earthquake.4 } }
+IRCK3_earthquake_5_on_action = { events = { IRCK3_earthquake.5 } }
+IRCK3_earthquake_6_on_action = { events = { IRCK3_earthquake.6 } }
+IRCK3_earthquake_7_on_action = { events = { IRCK3_earthquake.7 } }
+IRCK3_earthquake_8_on_action = { events = { IRCK3_earthquake.8 } }
+IRCK3_earthquake_9_on_action = { events = { IRCK3_earthquake.9 } }
+IRCK3_earthquake_10_on_action = { events = { IRCK3_earthquake.10 } }
