@@ -12,14 +12,14 @@
 		}
 
 		allow = {
-			#religious_power >= 400 #monarch points removed; MTODO: add replacement condition
+			#religious_power >= 400 #monarch points removed; TODO: add replacement condition
 			trigger_if = { #monarchy
 				limit = { is_monarchy = yes }
 				legitimacy >= 70
 			}
 			trigger_else_if = { #Republic
 				limit = { is_republic = yes }
-				current_ruler.character_party.party_support >= 50
+				has_senate_approval >= 0.5
 			}
 			trigger_else = { #Tribe
 				any_character = {
@@ -36,7 +36,7 @@
 		
 		effect = {
 			set_country_religion = christianity
-			#add_religious_power = -400 #monarch points removed; MTODO: add replacement effect
+			#add_religious_power = -400 #monarch points removed; TODO: add replacement effect
 			add_country_modifier = {
 				name = "recent_convert_modifier"
 				duration = 3650
