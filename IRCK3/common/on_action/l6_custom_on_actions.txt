@@ -2,7 +2,7 @@
 l6_custom_on_action_christianity = {
 	trigger = {
 		num_of_cities >= 1
-		has_global_flag = christianity_spreads_locally
+		has_global_variable = christianity_spreads_locally
 	}
 	events = {
 		l6_christian.1
